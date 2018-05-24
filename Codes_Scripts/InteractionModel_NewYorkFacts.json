@@ -1,0 +1,124 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "new york facts",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetNewFactIntent",
+                    "slots": [
+                        {
+                            "name": "fact_type",
+                            "type": "fact_type"
+                        }
+                    ],
+                    "samples": [
+                        "{fact_type} fact",
+                        "i want to know about {fact_type}",
+                        "tell me a fact about {fact_type}",
+                        "tell me a {fact_type} fact",
+                        "a fact",
+                        "a new york fact",
+                        "tell me a fact",
+                        "tell me a new york fact",
+                        "give me a fact",
+                        "give me a new york fact",
+                        "tell me trivia",
+                        "tell me new york trivia",
+                        "give me trivia",
+                        "give me some new york trivia",
+                        "give me some information",
+                        "give me some information about new york",
+                        "tell me something about new york",
+                        "give me something"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": [
+                        "start over",
+                        "can you say that again",
+                        "can you start again",
+                        "repeat that please",
+                        "say that again",
+                        "what was that",
+                        "what did you say",
+                        "can you repeat that"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "fact_type",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "history",
+                                "synonyms": [
+                                    "past",
+                                    "historical"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "art",
+                                "synonyms": [
+                                    "paintings"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "architecture",
+                                "synonyms": [
+                                    "buildings"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sports",
+                                "synonyms": [
+                                    "volleyball",
+                                    "hockey",
+                                    "soccer",
+                                    "football",
+                                    "baseball",
+                                    "basketball"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "movie",
+                                "synonyms": [
+                                    "film"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
